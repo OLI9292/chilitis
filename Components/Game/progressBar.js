@@ -32,7 +32,7 @@ export default class ProgressBar extends React.Component {
         <Animated.View style={[{ width: this.state.animation }]}>
           <Progress />
         </Animated.View>
-
+        
       </ContainerView>
     );
   }

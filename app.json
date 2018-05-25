@@ -1,5 +1,8 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
-  }
+    "sdkVersion": "27.0.0",
+    "ejectModule": "react-navigation-native-eject"
+  },
+  "name": "chilitis",
+  "displayName": "Wordcraft"
 }
