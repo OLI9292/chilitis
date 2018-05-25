@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import colors from '../../data/colors';
+import colors from '../../../data/colors';
 import { Animated } from "react-native";
 
 export default class Answer extends React.Component {
@@ -59,4 +59,5 @@ const WhiteLine = styled.View`
   background-color: ${props => props.missing ? "black" : colors.green};
   height: 4px;
   border-radius: 2px;
+  margin: 0px -2px;
 `;

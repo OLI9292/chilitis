@@ -1,51 +1,55 @@
 import { Navigation } from 'react-native-navigation';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {registerScreens, registerScreenVisibilityListener} from './screens';
 
 registerScreens(); // this is where you register all of your app's screens
 registerScreenVisibilityListener();
 
-// start the app
-Navigation.startTabBasedApp({
-  tabs: [
-    {
-      label: 'One',
-      screen: 'example.GameScreen', // this is a registered name fo
-      icon: require('./data/images/exit-gray.png'),
-      selectedIcon: require('./data/images/exit-gray.png'), // iOS only
-      title: 'Screen One'
-    },
-    {
-      label: 'Two',
-      screen: 'example.GameScreen',
-      icon: require('./data/images/exit-gray.png'),
-      selectedIcon: require('./data/images/exit-gray.png'), // iOS only
-      title: 'Screen Two'
-    }
-  ]
-});
-/*
-import React from 'react';
-import { Navigation } from 'react-native-navigation';
-import Game from './Components/Game/index';
-import { StyleSheet, Text, View } from 'react-native';
+async function prepareIcons() {
+  try {
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Game />
-      </View>
-    );
+    const [sword, emoticon, stadium] = await Promise.all([
+      Icon.getImageSource('sword', 30),
+      Icon.getImageSource('emoticon', 30),
+      Icon.getImageSource('stadium', 30)
+    ]);
+    
+    return { sword, emoticon, stadium };
+  } catch (error) {
+    console.log(error);
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-*/
+async function startApp() {
+
+  const icons = await prepareIcons();
+
+  Navigation.startTabBasedApp({
+    tabs: [
+      {
+        label: 'Solo',
+        screen: 'example.SoloScreen',
+        icon: icons.sword,
+        selectedIcon: icons.sword,
+        title: 'Solo'
+      },
+      {
+        label: 'Me',
+        screen: 'example.ProfileScreen',
+        icon: icons.emoticon,
+        selectedIcon: icons.emoticon,
+        title: 'Me'
+      },
+      {
+        label: 'Battle',
+        screen: 'example.BattleScreen',
+        icon: icons.stadium,
+        selectedIcon: icons.stadium,
+        title: 'Battle'
+      }
+    ]
+  });
+}
+
+startApp();

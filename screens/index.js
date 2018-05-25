@@ -1,8 +1,14 @@
 import {Navigation, ScreenVisibilityListener} from 'react-native-navigation';
 
+import SoloScreen from '../Components/Solo/index';
+import BattleScreen from '../Components/Battle/index';
+import ProfileScreen from '../Components/Profile/index';
 import GameScreen from '../Components/Game/index';
 
 export function registerScreens() {
+  Navigation.registerComponent('example.SoloScreen', () => SoloScreen);
+  Navigation.registerComponent('example.BattleScreen', () => BattleScreen);
+  Navigation.registerComponent('example.ProfileScreen', () => ProfileScreen);
   Navigation.registerComponent('example.GameScreen', () => GameScreen);
 }
 
