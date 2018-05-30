@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import colors from '../../../data/colors';
+import { colors, lighten10l } from '../../../data/colors';
 import eq from "lodash/eq";
 
 const HIGHLIGHT_IMMEDIATELY = [
@@ -71,5 +71,7 @@ const ContainerView = styled.View`
 
 const Text = styled.Text`
   text-align: center;
+  font-size: 20px;
+  font-family: ${props => props.highlight ? "BrandonGrotesque-Bold" : "BrandonGrotesque-Regular"};
   color: ${props => props.highlight ? colors.yellow : "black"};
 `;

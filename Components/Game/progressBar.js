@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import colors from '../../data/colors';
+import { colors, lighten10l } from '../../data/colors';
 import { Animated } from "react-native";
 
 export default class ProgressBar extends React.Component {

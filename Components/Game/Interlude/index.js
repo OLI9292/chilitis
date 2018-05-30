@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import colors from '../../../data/colors';
+import { colors, lighten10l } from '../../../data/colors';
 
 export default class Interlude extends React.Component {
   constructor(props) {
