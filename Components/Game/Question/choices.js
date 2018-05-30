@@ -3,8 +3,10 @@ import styled from "styled-components";
 import chunk from "lodash/chunk";
 import { Animated } from "react-native";
 import findIndex from "lodash/findIndex";
+import find from "lodash/find";
+import shuffle from "lodash/shuffle";
 
-import colors from '../../../data/colors';
+import { colors, lighten10l } from '../../../data/colors';
 
 export default class Choices extends React.Component {
   constructor(props) {
@@ -33,10 +35,10 @@ export default class Choices extends React.Component {
   }
 
   glowAnswer(giveAnswer = false) {
-    const answerIndex = findIndex(this.props.data, d => this.isCorrect(d.value));
-    this.setState({ glowAnswer: answerIndex });
+    const answer = find(shuffle(this.props.answer), d => d.missing).value.toLowerCase();
+    this.setState({ glowAnswer: answer });
     this.glowAnswerTimeout = setTimeout(() => this.setState({ glowAnswer: null }), 1000);
-    if (giveAnswer) { this.tappedChoice(true, answerIndex); }
+    if (giveAnswer) { this.tappedChoice(true, answer); }
   }
 
   giveAnswer() {
@@ -61,9 +63,10 @@ export default class Choices extends React.Component {
     }, 2000);
   }
 
-  tappedChoice(correct, index) {
+  tappedChoice(correct, value) {
     const answer = this.props.answer;  
-    if (correct) { answer[index].missing = false; }
+    const index = findIndex(answer, d => d.value === value.toLowerCase() && d.missing);
+    if (index > -1) { answer[index].missing = false; }
     const done = !answer.map(d => d.missing).includes(true);      
     this.props.guessed(correct, done, answer);
   }
@@ -75,16 +78,16 @@ export default class Choices extends React.Component {
       isSpellQuestion
     } = this.state;
 
-    const choice = (data, i) => {
+    const choice = data => {
       const correct = this.isCorrect(data.value);
-      const color = glowAnswer === i ? colors.green : colors.blue;
+      const color = glowAnswer === data.value.toLowerCase() ? colors.green : colors.blue;
 
       return <Button
         isSpellQuestion={isSpellQuestion}
         color={color}
         key={data.value}
         underlayColor={correct ? colors.green : colors.red}
-        onPress={() => this.tappedChoice(correct, i)}>
+        onPress={() => this.tappedChoice(correct, data.value)}>
         <TextContainer>
           <Text>
             {data.value}
@@ -137,4 +140,5 @@ const TextContainer = styled.View`
 const Text = styled.Text`
   color: white;
   text-align: center;
+  font-family: BrandonGrotesque-Bold;
 `;

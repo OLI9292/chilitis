@@ -47,6 +47,10 @@
 		8F705E7E0E444D81A3F2C30B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3FC7E4E207A4CF9BE053F21 /* Octicons.ttf */; };
 		918E94B32FAF432281374DC5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1C89DB52A2D4100BA322AD9 /* MaterialIcons.ttf */; };
 		A72E686420B728490055F00A /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A72E686320B727EF0055F00A /* libReactNativeNavigation.a */; };
+		A73A608620B8348E007B0AA5 /* BrandonGrotesque-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A73A605B20B8348E007B0AA5 /* BrandonGrotesque-Bold.otf */; };
+		A73A608720B8348E007B0AA5 /* BrandonGrotesque-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A73A605C20B8348E007B0AA5 /* BrandonGrotesque-Light.otf */; };
+		A73A608820B8348E007B0AA5 /* BrandonGrotesque-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A73A605D20B8348E007B0AA5 /* BrandonGrotesque-Regular.otf */; };
+		A73A608920B8348E007B0AA5 /* BrandonGrotesque-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A73A605E20B8348E007B0AA5 /* BrandonGrotesque-SemiBold.otf */; };
 		A7A5A20520B731A400038CA4 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A1D520B731A400038CA4 /* Entypo.ttf */; };
 		A7A5A20620B731A400038CA4 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A1D620B731A400038CA4 /* EvilIcons.ttf */; };
 		A7A5A20720B731A400038CA4 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A1D720B731A400038CA4 /* Feather.ttf */; };
@@ -363,6 +367,7 @@
 		00E356EE1AD99517003FC87E /* chilitisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chilitisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* chilitisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chilitisTests.m; sourceTree = "<group>"; };
+		07764FFAB86B47F58A45B33C /* BrandonGrotesque-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Bold.otf"; path = "../data/fonts/BrandonGrotesque/BrandonGrotesque-Bold.otf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* chilitis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chilitis.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,16 +381,27 @@
 		2D02E47B1E0B4A5D006451C7 /* chilitis-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chilitis-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* chilitis-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chilitis-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4399A9FBCCEA4E9A8A45D05F /* BrandonGrotesque-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Regular.otf"; path = "../data/fonts/BrandonGrotesque/BrandonGrotesque-Regular.otf"; sourceTree = "<group>"; };
+		4BB29830152C4E979EAA1B60 /* Brandon_reg.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Brandon_reg.otf; path = ../data/fonts/Brandon_reg.otf; sourceTree = "<group>"; };
+		56C09EFF8A414CC3A2944EA3 /* Brandon_thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Brandon_thin.otf; path = ../data/fonts/Brandon_thin.otf; sourceTree = "<group>"; };
 		5E8959E589784EB3B3996360 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		61ECC1895D6840858868BE69 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		62A3232D18BF4BA2B57B0B84 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7EEB27ACC0854AC081932F81 /* Brandon_med.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Brandon_med.otf; path = ../data/fonts/Brandon_med.otf; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		890DBE34B36E4B418016C031 /* BrandonGrotesque-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-SemiBold.otf"; path = "../data/fonts/BrandonGrotesque-SemiBold.otf"; sourceTree = "<group>"; };
+		912F55C5F47F49B982962D24 /* BrandonGrotesque-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Regular.otf"; path = "../data/fonts/BrandonGrotesque-Regular.otf"; sourceTree = "<group>"; };
 		9B91B05A446C42118761D0A2 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		A039DBA13B0749B4AC7A5258 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		A2E8E1BF8D774DD08B9393A2 /* BrandonGrotesque-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Light.otf"; path = "../data/fonts/BrandonGrotesque-Light.otf"; sourceTree = "<group>"; };
 		A428E5DA513E483C93CBBB37 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		A72E683920B727EE0055F00A /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
+		A73A605B20B8348E007B0AA5 /* BrandonGrotesque-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonGrotesque-Bold.otf"; sourceTree = "<group>"; };
+		A73A605C20B8348E007B0AA5 /* BrandonGrotesque-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonGrotesque-Light.otf"; sourceTree = "<group>"; };
+		A73A605D20B8348E007B0AA5 /* BrandonGrotesque-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonGrotesque-Regular.otf"; sourceTree = "<group>"; };
+		A73A605E20B8348E007B0AA5 /* BrandonGrotesque-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonGrotesque-SemiBold.otf"; sourceTree = "<group>"; };
 		A7A5A1D520B731A400038CA4 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
 		A7A5A1D620B731A400038CA4 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		A7A5A1D720B731A400038CA4 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -397,12 +413,16 @@
 		A7A5A1DD20B731A400038CA4 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		A7A5A1DE20B731A400038CA4 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		A7A5A1DF20B731A400038CA4 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		AC955EA51754474ABF752B27 /* Brandon_bld.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Brandon_bld.otf; path = ../data/fonts/Brandon_bld.otf; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B71E051A008B40B3A47158AE /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		B8D4E5B62BD44B1F8368D08F /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		B9A3F00B17D643D2BB89661C /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		DC5B3370FF0F4B7A9DCBC838 /* BrandonGrotesque-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Light.otf"; path = "../data/fonts/BrandonGrotesque/BrandonGrotesque-Light.otf"; sourceTree = "<group>"; };
 		DDE2CF060AC2457EA87E3F30 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		E3FC7E4E207A4CF9BE053F21 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		E9BBD8EB4295472D82A652E1 /* BrandonGrotesque-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Bold.otf"; path = "../data/fonts/BrandonGrotesque-Bold.otf"; sourceTree = "<group>"; };
+		EE5AC9F4006748A8A52494EE /* BrandonGrotesque-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-SemiBold.otf"; path = "../data/fonts/BrandonGrotesque/BrandonGrotesque-SemiBold.otf"; sourceTree = "<group>"; };
 		F1C89DB52A2D4100BA322AD9 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		F344B919DFFD4978920D9D91 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -612,6 +632,18 @@
 				E3FC7E4E207A4CF9BE053F21 /* Octicons.ttf */,
 				F344B919DFFD4978920D9D91 /* SimpleLineIcons.ttf */,
 				B8D4E5B62BD44B1F8368D08F /* Zocial.ttf */,
+				AC955EA51754474ABF752B27 /* Brandon_bld.otf */,
+				7EEB27ACC0854AC081932F81 /* Brandon_med.otf */,
+				4BB29830152C4E979EAA1B60 /* Brandon_reg.otf */,
+				56C09EFF8A414CC3A2944EA3 /* Brandon_thin.otf */,
+				E9BBD8EB4295472D82A652E1 /* BrandonGrotesque-Bold.otf */,
+				A2E8E1BF8D774DD08B9393A2 /* BrandonGrotesque-Light.otf */,
+				912F55C5F47F49B982962D24 /* BrandonGrotesque-Regular.otf */,
+				890DBE34B36E4B418016C031 /* BrandonGrotesque-SemiBold.otf */,
+				07764FFAB86B47F58A45B33C /* BrandonGrotesque-Bold.otf */,
+				DC5B3370FF0F4B7A9DCBC838 /* BrandonGrotesque-Light.otf */,
+				4399A9FBCCEA4E9A8A45D05F /* BrandonGrotesque-Regular.otf */,
+				EE5AC9F4006748A8A52494EE /* BrandonGrotesque-SemiBold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -690,9 +722,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A73A605A20B8348E007B0AA5 /* BrandonGrotesque */ = {
+			isa = PBXGroup;
+			children = (
+				A73A605B20B8348E007B0AA5 /* BrandonGrotesque-Bold.otf */,
+				A73A605C20B8348E007B0AA5 /* BrandonGrotesque-Light.otf */,
+				A73A605D20B8348E007B0AA5 /* BrandonGrotesque-Regular.otf */,
+				A73A605E20B8348E007B0AA5 /* BrandonGrotesque-SemiBold.otf */,
+			);
+			name = BrandonGrotesque;
+			path = ../data/fonts/BrandonGrotesque;
+			sourceTree = "<group>";
+		};
 		A78C1EDE20B73AE6001DB686 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				A73A605A20B8348E007B0AA5 /* BrandonGrotesque */,
 				62A3232D18BF4BA2B57B0B84 /* libRNVectorIcons.a */,
 			);
 			name = "Recovered References";
@@ -1214,16 +1259,20 @@
 				A7A5A20B20B731A400038CA4 /* MaterialCommunityIcons.ttf in Resources */,
 				A7A5A20820B731A400038CA4 /* FontAwesome.ttf in Resources */,
 				CB057B1CB50144AC82CC5097 /* Entypo.ttf in Resources */,
+				A73A608820B8348E007B0AA5 /* BrandonGrotesque-Regular.otf in Resources */,
 				0013C5E6BB624AEA968EEFFF /* EvilIcons.ttf in Resources */,
 				1B5DB255BA4F49088D4210B4 /* Feather.ttf in Resources */,
 				61A59A0CA19D4B07828A3F2F /* FontAwesome.ttf in Resources */,
 				B08CC79C419D404A9C81AB6C /* Foundation.ttf in Resources */,
+				A73A608920B8348E007B0AA5 /* BrandonGrotesque-SemiBold.otf in Resources */,
 				56024BD7E2F440019CDA8773 /* Ionicons.ttf in Resources */,
 				3FF13E4CBA4F4704BF3357E8 /* MaterialCommunityIcons.ttf in Resources */,
 				918E94B32FAF432281374DC5 /* MaterialIcons.ttf in Resources */,
 				8F705E7E0E444D81A3F2C30B /* Octicons.ttf in Resources */,
 				7DE8C558FA554198B4C06045 /* SimpleLineIcons.ttf in Resources */,
+				A73A608720B8348E007B0AA5 /* BrandonGrotesque-Light.otf in Resources */,
 				3A364A74F28E4C0099A7A823 /* Zocial.ttf in Resources */,
+				A73A608620B8348E007B0AA5 /* BrandonGrotesque-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

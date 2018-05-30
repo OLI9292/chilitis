@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import colors from '../../../data/colors';
+import { colors, lighten10l } from '../../../data/colors';
 import { Animated } from "react-native";
 
 export default class Answer extends React.Component {
@@ -52,6 +52,7 @@ const ContainerView = styled.View`
 
 const Text = styled.Text`
   font-size: 24;
+  font-family: BrandonGrotesque-Bold;
   opacity: ${props => props.missing ? 0 : 1};
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-import colors from '../../data/colors';
+import { colors, lighten10l } from '../../data/colors';
 import data from './Question/data';
 import Question from './Question/index';
 import ProgressBar from './progressBar';
@@ -14,7 +14,7 @@ export default class Game extends React.Component {
     this.state = {
       questions: data,
       hintCount: 0,
-      questionIndex: 7
+      questionIndex: 0
     };
 
     this.questionComponent = React.createRef();
@@ -106,6 +106,7 @@ const Button = styled.TouchableHighlight`
 
 const Text = styled.Text`
   color: white;
+  font-family: BrandonGrotesque-Bold;
 `;
 
 const ExitButton = styled.TouchableHighlight`

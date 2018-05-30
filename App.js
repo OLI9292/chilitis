@@ -1,7 +1,10 @@
 import { Navigation } from 'react-native-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {registerScreens, registerScreenVisibilityListener} from './screens';
+import {
+  registerScreens,
+  registerScreenVisibilityListener
+} from './screens';
 
 registerScreens(); // this is where you register all of your app's screens
 registerScreenVisibilityListener();
